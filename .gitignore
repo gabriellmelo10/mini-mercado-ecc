@@ -1,0 +1,28 @@
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+backend/target/
+frontend/dist/
+node_modules/
+
+# Local Data
+data/*.db
+data/*.db-journal
+backend/*.db
+backend/*.db-journal
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local
+.env.*.local

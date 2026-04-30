@@ -1,0 +1,6 @@
+{
+  "name": "Mini-Mercado ECC",
+  "description": "PWA para controle de consumo e vendas do mini-mercado do ECC com sincronização em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

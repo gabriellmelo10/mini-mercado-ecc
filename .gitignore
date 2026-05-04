@@ -25,3 +25,7 @@ data/
 .env
 .env.local
 .env.*.local
+
+# Project Specific
+GEMINI.md
+"Documentação de Requisitos_ PWA Mini-Mercado ECC.md"

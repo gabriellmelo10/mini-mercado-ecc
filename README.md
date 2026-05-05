@@ -30,7 +30,6 @@ O projeto segue uma arquitetura desacoplada, priorizando a estabilidade e a faci
 - **Java 17 (LTS):** Uso de Records e APIs modernas.
 - **Spring Boot 3:** Framework robusto para API REST e segurança.
 - **Spring Data JPA:** Abstração de persistência.
-- **Flyway:** Gerenciamento automatizado de migrações de banco de dados.
 - **SQLite:** Banco de dados local e embarcado, ideal para deploys simplificados e funcionamento offline.
 
 ### **Frontend**

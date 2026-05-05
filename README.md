@@ -85,12 +85,11 @@ O sistema utiliza variáveis de ambiente para se adaptar a diferentes cenários 
 | :--- | :--- | :--- |
 | `SPRING_JPA_SHOW_SQL` | Habilita a exibição do SQL no console. | `false` |
 | `SPRING_JPA_FORMAT_SQL` | Formata o SQL exibido para melhor leitura. | `false` |
-| `SPRING_JPA_DDL_AUTO` | Estratégia de geração de DDL (ex: validate, update). | `validate` |
 
 ### **Como configurar**
 
 > [!NOTE]
-> Este passo é **opcional** e serve para logar os comandos DDL/SQL no console ou habilitar a atualização automática do banco em ambiente de desenvolvimento.
+> Este passo é **opcional** e serve para logar os comandos SQL no console em ambiente de desenvolvimento.
 
 Para configurar essas variáveis, crie um arquivo `.env` na raiz do projeto:
 
@@ -102,7 +101,6 @@ Para configurar essas variáveis, crie um arquivo `.env` na raiz do projeto:
    ```env
    SPRING_JPA_SHOW_SQL=true
    SPRING_JPA_FORMAT_SQL=true
-   SPRING_JPA_DDL_AUTO=update
    ```
 
 ---

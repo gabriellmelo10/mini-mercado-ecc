@@ -30,6 +30,7 @@ O projeto segue uma arquitetura desacoplada, priorizando a estabilidade e a faci
 - **Java 17 (LTS):** Uso de Records e APIs modernas.
 - **Spring Boot 3:** Framework robusto para API REST e segurança.
 - **Spring Data JPA:** Abstração de persistência.
+- **Flyway:** Gerenciamento automatizado de migrações de banco de dados.
 - **SQLite:** Banco de dados local e embarcado, ideal para deploys simplificados e funcionamento offline.
 
 ### **Frontend**
@@ -85,24 +86,22 @@ O sistema utiliza variáveis de ambiente para se adaptar a diferentes cenários 
 | :--- | :--- | :--- |
 | `SPRING_JPA_SHOW_SQL` | Habilita a exibição do SQL no console. | `false` |
 | `SPRING_JPA_FORMAT_SQL` | Formata o SQL exibido para melhor leitura. | `false` |
-| `SPRING_JPA_DDL_AUTO` | Estratégia de geração de DDL (ex: validate, update). | `validate` |
 
 ### **Como configurar**
 
 > [!NOTE]
-> Este passo é **opcional** e serve para logar os comandos DDL/SQL no console ou habilitar a atualização automática do banco em ambiente de desenvolvimento.
+> Este passo é **opcional** e serve principalmente para logar os comandos SQL no console durante o desenvolvimento. O esquema do banco de dados é gerenciado automaticamente pelo **Flyway** através de migrations em `backend/src/main/resources/db/migration`.
 
-Para configurar essas variáveis, crie um arquivo `.env` na raiz do projeto:
+Para configurar o logging de SQL, crie um arquivo `.env` na raiz do projeto:
 
 1. Na raiz do projeto, crie o arquivo:
    ```bash
    touch .env
    ```
-2. Adicione as configurações desejadas (exemplo para desenvolvimento):
+2. Adicione as configurações desejadas:
    ```env
    SPRING_JPA_SHOW_SQL=true
    SPRING_JPA_FORMAT_SQL=true
-   SPRING_JPA_DDL_AUTO=update
    ```
 
 ---

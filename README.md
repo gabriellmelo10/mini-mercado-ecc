@@ -88,6 +88,9 @@ O sistema utiliza variáveis de ambiente para se adaptar a diferentes cenários 
 
 ### **Como configurar**
 
+> [!NOTE]
+> Este passo é **opcional** e serve principalmente para logar os comandos DDL/SQL no console durante o desenvolvimento.
+
 Para configurar essas variáveis, crie um arquivo `.env` na raiz do projeto:
 
 1. Na raiz do projeto, crie o arquivo:

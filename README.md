@@ -83,18 +83,22 @@ O sistema utiliza variáveis de ambiente para se adaptar a diferentes cenários 
 
 | Variável | Descrição | Padrão (Local) |
 | :--- | :--- | :--- |
-| `SPRING_DATASOURCE_URL` | URL de conexão com o SQLite. | `jdbc:sqlite:minimercado.db` |
 | `SPRING_JPA_SHOW_SQL` | Habilita a exibição do SQL no console. | `false` |
 | `SPRING_JPA_FORMAT_SQL` | Formata o SQL exibido para melhor leitura. | `false` |
-| `SERVER_PORT` | Porta onde o backend será executado. | `8080` |
 
-### **Frontend (Vite)**
+### **Como configurar**
 
-Em ambiente de desenvolvimento local, o Vite utiliza o arquivo `frontend/.env`. No Docker, a comunicação é feita via proxy reverso.
+Para configurar essas variáveis, crie um arquivo `.env` na raiz do projeto:
 
-| Variável | Descrição | Padrão (Local) |
-| :--- | :--- | :--- |
-| `VITE_API_URL` | URL base da API do backend. | `http://localhost:8080/api` |
+1. Na raiz do projeto, crie o arquivo:
+   ```bash
+   touch .env
+   ```
+2. Adicione as configurações desejadas:
+   ```env
+   SPRING_JPA_SHOW_SQL=true
+   SPRING_JPA_FORMAT_SQL=true
+   ```
 
 ---
 

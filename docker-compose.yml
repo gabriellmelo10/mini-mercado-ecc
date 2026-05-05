@@ -4,6 +4,10 @@ services:
     container_name: minimercado-api
     ports:
       - "8080:8080"
+    environment:
+      - SPRING_JPA_SHOW_SQL=${SPRING_JPA_SHOW_SQL}
+      - SPRING_JPA_FORMAT_SQL=${SPRING_JPA_FORMAT_SQL}
+      - SPRING_DATASOURCE_URL=jdbc:sqlite:/data/minimercado.db
     volumes:
       - ./data:/data
     restart: unless-stopped
